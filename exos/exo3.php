@@ -37,6 +37,31 @@ require_once '../inc/functions.php';
  */
 
 
+class Mario {
+    private $lives;
+
+    public function __construct()
+    {
+        $this->lives = 3;
+    }
+
+    public function getLives()
+    {
+        return $this->lives;
+    }
+
+    public function takeHit()
+    {
+        $this->lives -= 1;
+        return $this->lives;
+    }
+
+    public function up()
+    {
+        $this->lives += 1;
+        return $this->lives;
+    }
+}
 
 
 /*
