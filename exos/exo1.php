@@ -27,7 +27,14 @@ require_once '../inc/functions.php';
  *      echo $mario->lives; // Display: 3
  */
 
+class Mario {
+    public $lives;
 
+    public function __construct()
+    {
+        $this->lives = 3;
+    }
+}
 
 
 
